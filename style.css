@@ -31,7 +31,7 @@ nav{
 }
 
 header{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -690,6 +690,11 @@ footer{
 }
 
 @media (min-width: 550px) and (max-width: 1000px){
+
+  html{
+    overflow-x: hidden;
+  }
+
   .slider {
     max-height: 50vh;
   }
@@ -842,6 +847,11 @@ footer{
 }
 
 @media (min-width: 1px) and (max-width: 540px){
+
+  html{
+    overflow-x: hidden;
+  }
+
   .slider {
     max-height: 35vh;
   }
