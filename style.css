@@ -2,13 +2,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body{
   margin: 0;
   padding: 0;
   background: #000;
   background-image: url("image/bg_line.png");
   background-size: cover;
-  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -310,6 +313,59 @@ p{
   margin-bottom: 5rem;
 }
 
+.conversation{
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head-container h1{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.head-container h3{
+  color: #43D9B8;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.conversation{
+  background: #1d1d1f;
+}
+
+.Or-body{
+  min-width: 100%;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  background: #ffe382;
+  border-radius: 3px;
+}
+
+.Or{
+  width: 5rem;
+  height: 5rem;
+  background: #ffe382;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .form{
   background: #1d1d1f;
   padding: 1rem;
@@ -500,7 +556,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .img, .cont{
@@ -537,7 +593,7 @@ textarea{
 
 .person-grouping{
   position: relative;
-  margin-top: 5rem;
+  margin-top: 3rem;
   min-width: 100%;
   max-height: 100vh;
   display: flex;
@@ -558,15 +614,6 @@ textarea{
 
 .person:hover .imgbox{
   box-shadow: 0 35px 80px #ffe382;
-}
-
-@keyframes animate{
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
 }
 
 .imgbox{
@@ -669,6 +716,11 @@ footer{
   margin-right: .5rem;
 }
 
+i{
+  font-size: 1.1rem;
+  color: #fff;
+}
+
 .copyright{
   position: absolute;
   left: 0;
@@ -693,6 +745,10 @@ footer{
 
   html{
     overflow-x: hidden;
+  }
+
+  body{
+    background-size: contain;
   }
 
   .slider {
@@ -839,10 +895,19 @@ footer{
 
   .person-grouping{
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .person{
     margin-bottom: 5rem;
+  }
+
+  .pic,.section,.form,.conversation{
+    border-radius: 10px;
+  }
+
+  .section-container{
+    border-radius: 5px;
   }
 }
 
@@ -850,6 +915,10 @@ footer{
 
   html{
     overflow-x: hidden;
+  }
+
+  body{
+    background-size: contain;
   }
 
   .slider {
@@ -1009,5 +1078,13 @@ footer{
 
   .section-image{
     height: 10rem;
+  }
+
+  .pic,.section,.form,.conversation{
+    border-radius: 10px;
+  }
+
+  .section-container{
+    border-radius: 5px;
   }
 }

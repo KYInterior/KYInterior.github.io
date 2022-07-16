@@ -6,18 +6,18 @@
 }
 
   body.lb-disable-scrolling{
-    overflow:hidden
+    overflow:hidden;
   }
 
   .lightboxOverlay{
       position:absolute;
       top:0;
       left:0;
+      max-width: 100%;
       z-index:9999;
       background-color:#000;
-      filter:alpha(Opacity=80);
+      filter: alpha(Opacity=80);
       opacity:.8;
-      display:none;
     }
 
     .lightbox{
