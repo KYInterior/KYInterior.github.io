@@ -53,14 +53,20 @@
         </ul>
       </div>
     </nav>
-    <div class="slider">
-      <figure>
-        <img src="/image/Projects/Juhu (32).jpg" alt="">
-          <img src="/image/Projects/Kolkata (30).jpg" alt="">
-          <img src="/image/Projects/Kolkata (26).jpg" alt="">
-        <img src="/image/Projects/Juhu (32).jpg" alt="">
-      </figure>
-    </div>
+    <section class="container-slider">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="/image/Projects/Juhu (32).jpg" alt="">
+            <img id="slide-2" src="/image/Projects/Kolkata (30).jpg" alt="">
+          <img id="slide-3" src="/image/Projects/Kolkata (26).jpg" alt="">
+        </div>
+      </div>
+      <div class="slider_nav">
+        <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </section>
       <div class="cards">
         <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="preview">
           <img src="/image/Projects/Juhu (19).jpg" alt="">
@@ -96,7 +102,7 @@
           <div class="head-container">
             <h1>Get in Touch</h1>
             <h3>Chat Now</h3>
-            <p><i class="fa-brands fa-whatsapp"></i> +91-9987113305</p>
+            <a href="tel:9987113305"><i class="fa-brands fa-whatsapp"></i> +91-9987113305</a>
           </div>
         </div>
         <div class="Or-body">
@@ -105,7 +111,7 @@
             </div>
         </div>
         <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" class="form">
-          <div class="title">Enter your Details Below</div>
+          <div class="title">Enter Your Details Below</div>
           <form class="contact-form" action="https://formspree.io/f/meqnbwpr" method="POST">
             <div class="row-">
               <div class="col">

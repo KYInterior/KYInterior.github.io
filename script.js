@@ -18,16 +18,4 @@
     item_5.classList.toggle("active");
   })
 
-function sendEmail() {
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "sutharkavya240@gmail.com",
-    Password : "KAVYA@123",
-    To : 'kyinterior.in@gmail.com',
-    From : "sutharkavya240@gmail.com",
-    Subject : "This is the subject",
-    Body : "Hi!"
-      }).then(
-        message => alert(message)
-      );
-}
+
