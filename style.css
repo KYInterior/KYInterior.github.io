@@ -522,6 +522,9 @@ textarea{
 
 .section-image img{
   width: 100%;
+  border-radius: .4rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   height: 100%;
   margin: auto;
 }
@@ -738,7 +741,8 @@ footer{
 }
 
 .label a{
-  letter-spacing: .1rem;
+  letter-spacing: .11rem;
+  text-decoration: none;
 }
 
 .label i{
