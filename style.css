@@ -482,10 +482,9 @@ textarea{
 
 .section-group{
   position: relative;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
   max-height: 100vh;
   padding: 2rem;
+  padding-top: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -493,40 +492,55 @@ textarea{
 .section{
   position: relative;
   min-width: 35%;
-  background-color: #1d1d1f;
-  padding: 1rem;
   border-radius: 1rem;
+  transition: .5s;
+}
+
+.section:hover{
+  transform: scale(1.04);
+  transition: .5s;
 }
 
 .section-container{
   position: relative;
-  border: solid 2px #ffe382;
   border-radius: .5rem;
 }
 
 .section-content{
   text-align: center;
+  background-color: #1d1d1f;
   padding: 1rem;
+  border-radius: .5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: inset 1px 1px 10px #111;
 }
 
 .section-content-{
   text-align: left;
   padding: .5rem;
   padding-left: 2rem;
+  background-color: #1d1d1f;
+  border-radius: .5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: inset 1px 1px 10px #111;
 }
 
 .section-image{
   position: relative;
   height: 20rem;
+  display: flex;
 }
 
 .section-image img{
-  width: 100%;
-  border-radius: .4rem;
+  max-width: 90%;
+  border-radius: .5rem;
   border-bottom-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  height: 100%;
+  border-bottom-right-radius: 0px;
+  max-height: 90%;
   margin: auto;
+  margin-bottom: 0;
 }
 
 .anchor{
@@ -1058,6 +1072,7 @@ i{
   .section-group{
     flex-direction: column;
     padding: 1rem;
+    max-height: 100vh;
   }
 
   .section{
